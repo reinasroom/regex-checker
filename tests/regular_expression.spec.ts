@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Verify that the regular expression works as expected', async ({ page }) => {
   await page.goto('http://localhost:3000/');
   await page.getByLabel('正規表現:').click();
   await page.getByLabel('正規表現:').fill('a');
